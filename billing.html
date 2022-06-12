@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment</title>
+
+     <!-- CSS only -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+     <!--Icons-->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+
+     <style>
+        #idiscount {
+            width: 50%;
+        }
+
+        input{
+            width: 30%;
+        }
+     </style>
+
+</head>
+<body>
+    <div class="container ">
+        <div class="grid m-5 p-5">
+        
+            <!--nav?-->
+            <div class="row">
+                <p>
+                    <a href="home.html">Home</a> 
+                    > Billing Details
+                </p>
+                            
+            </div>
+
+            <div class="row mt-3">
+                <div class="row mt-3">
+                    <h1>Payment</h1>
+                </div>
+                
+                <!--verify appointment-->
+                <div class="">
+                    <div class="row mt-5">
+                        <h2>Summary</h2>
+                    </div>
+            
+
+                    <!--billing details-->
+                    <div class="row">
+                        <div class="table">
+                            <table class="table border table-hover">
+                                <thead>
+                                    <tr>
+                                        <p>Billing ID # B-0000140</p>
+                                    </tr>
+                                    <tr class="bg-dark text-white">
+                                        <th>Details</th>
+                                        <th>Unit Price</th>
+                                        <th>Quantity</th>
+                                        <th>Total</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Consultation</td>
+                                        <td>500</td>
+                                        <td>2 hrs.</td>
+                                        <td>1000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Printing</td>
+                                        <td>2</td>
+                                        <td>3</td>
+                                        <td>6</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="3" class="text-end">
+                                            <strong class="mx-1">Discount</strong>
+                                        </td>
+                                        
+                                        <td class="">
+                                            <input type="text" id="idiscount">
+                                        </td>
+                                    </tr>
+                                    <td colspan="3" class="text-end">
+                                        <strong class="mx-1">Tax</strong>
+                                    </td>
+                                    
+                                    <td>
+                                        <strong>12%</strong>
+                                    </td>
+                                    <tr>
+                                        <td colspan="3" class="text-end">
+                                            <strong class="mx-1">Total</strong>
+                                        </td>
+                                        
+                                        <td>
+                                            <strong>1126.72</strong>
+                                        </td>
+                                    </tr>
+                                </tbody>
+
+                             
+                            </table>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <!--Receipt-->
+                <div class="row">
+                    <div class="row">
+                        <h2>Official Receipt</h2>
+                    </div>
+                    <div class="row">
+                        <form action="">
+                            <div class="row">
+                                <label for="pid" class="col-sm-3 ">Billing ID# </label>
+                                <div class="col-sm-9">B-0000140</div>
+                            </div>
+
+                            <div class="row">
+                                <label for="bkdate" class="col-sm-3">Payment date</label>
+                                <input type="date" class="col-sm-9 w-20" name="bkdate" placeholder required>
+                            </div>
+
+                            <div class="row">
+                                <label for="tamt" class="col-sm-3 ">Total Paid </label>
+                                <input type="number" class="col-sm-9" name="tamt" placeholder="Php" required>
+                            </div>
+
+                            <div class="row">
+                                <label for="pvia" class="col-sm-3 ">Paid via </label>
+                                <select name="" id="" class="col-sm-9">
+                                    <option value="Cash" active>Cash</option>
+                                    <option value="ewallet" active>Ewallet</option>
+                                    <option value="bank" active>Bank</option>
+                                </select>
+                            </div>
+
+                            <div class="row">
+                                <label for="pchannel">If e-wallet/bank, fill details below:</label>
+                                E-wallet/Bank name:
+                                <input type="text" name="pchannel">
+                                Transaction No.
+                                <input type="text" name="pchannel">
+                            </div>
+                           
+                        
+                            <!--submit button-->
+                            <div class="row mt-5">
+                                <button type="button" name="button" id="login" class="btn btn-primary w-20"><a href="notifprint.html" class="text-white">Click to print documents</a></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+     <!-- JavaScript Bundle with Popper -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+
+</body>
+</html>

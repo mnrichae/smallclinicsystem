@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Record</title>
+
+      <!-- CSS only -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+      <!--Icons-->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+
+    <style>
+        #btn-sr{
+            width: 30%;
+        }
+
+        
+
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="grid m-3 p-3">
+            <!--nav?-->
+            <div class="row">
+                <p>
+                    <a href="home.html">Home</a> 
+                    >
+                    <a href="appointment.html">Verify Appointment</a> 
+                    > Appointment Details
+                </p>
+            </div>
+
+            <!--medical record-->
+            <div class="row">
+
+                <div class="row mt-3">
+                    <h1>Appointment Details</h1>
+                </div>
+
+                <div class="row p-5">
+                <!--Appointment Details-->
+                    <div class="row">
+                        
+                        <div class="row mt-3">
+                            <h2>Appointment Details</h2>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-3">Appointment ID</div>
+                            <div class="col-sm-9">0001</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-3">Booked Schedule</div>
+                            <div class="col-sm-9">02-03-04 14:00</div>
+                        </div>
+
+                    </div>
+
+                    <!--Patient Details-->
+                    <div class="row">
+                        <div class="row mt-3">
+                            <h2>
+                                Patient's Details
+                            </h2>
+                        </div>
+                        <div class="row">
+                            <p class="col-sm-3 my-0">Patient's ID</p>
+                            <p class="col-sm-9 my-0">P-001</p>
+                        </div>
+                        <div class="row">
+                            <p class="col-sm-3 my-0">Patient's Name</p>
+                            <p class="col-sm-9 my-0">Pol, Sam</p>
+                        </div>
+                        <div class="row">
+                            <p class="col-sm-3 my-0">Personal Information</p>
+                            <p class="col-sm-9 my-0"><a href="">Click here</a></p>
+                        </div>
+                        <div class="row">
+                            <p class="col-sm-3 my-0">Medical Information</p>
+                            <p class="col-sm-9 my-0"><a href="">Click here</a></p>
+                        </div>
+                    </div>
+
+
+
+                    <!--Medical Signs-->
+                    <div class="row">
+                        <div class="row mt-3">
+                            <h2>Current Medical Record</h2>
+                        </div>
+                        <form action="">
+                            <div class="row mt-3">
+                                <label for="temp" class="col-sm-3 mt-1">Laboratory Result</label>
+                                <input type="file" class="col-sm-9 mt-1" name="temp" required>
+                            </div>
+                            <div class="row mt-3">
+                                <label for="temp" class="col-sm-3 mt-1">Body Temp</label>
+                                <input type="text" class="col-sm-9 mt-1" name="temp" required>
+                            </div>
+                    
+                            <div class="row">
+                                <label for="pulse" class="col-sm-3 mt-1">Pulse Rate</label>
+                                <input type="text" class="col-sm-9 mt-1" name="pulse" required>
+                            </div>
+                    
+                            <div class="row">
+                                <label for="resp" class="col-sm-3 mt-1">Respiration Rate</label>
+                                <input type="text" class="col-sm-9 mt-1" name="resp" required>
+                            </div>
+
+                            <div class="row">
+                                <label for="bp" class="col-sm-3 mt-1">Blood Pressure</label>
+                                <input type="text" class="col-sm-9 mt-1" name="bp" required>
+                            </div>
+
+                            <div class="row">
+                                <label for="weight" class="col-sm-3 mt-1">Weight (kg)</label>
+                                <input type="text" class="col-sm-9 mt-1" name="weight" required>
+                            </div>
+
+                            <div class="row">
+                                <label for="weight" class="col-sm-3 mt-1">Height (ft)</label>
+                                <input type="text" class="col-sm-9 mt-1" name="height" required>
+                            </div>
+
+                            <!--submit button-->
+                            <div class="row mt-5 justify-content-center">
+                                <button type="button" name="button" id="btn-sr" class="btn btn-primary "><a href="notifdoctor.html" class="text-white">Save and Forward</a></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>    
+            </div>
+        </div>
+    </div>
+
+     <!-- JavaScript Bundle with Popper -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+</body>
+</html>
