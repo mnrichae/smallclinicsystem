@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    height: 90vh;
+}
+
+
+body{
+    display: flex;
+    justify-content: center;
+}
+
+.labelRequired:after{
+    content: " *";
+    color: red;
+}
+
+.button{
+    width: 100px;
+    border: none;
+    margin-right: 5px;
+}
+
+input{
+    margin-top: 20px;
+    border: 2px solid #c4c4c4;
+}
+
+.inputWidth{
+    width: 100%;
+}
+
+.inputAddWidth{
+    width: 100%;
+}
+
+select{
+    margin-bottom: 20px;
+}
+
+.error{
+    font-size: small;
+    padding-top: 0%;
+    margin-top: 0;
+}
+
+/*appointment*/
+#bappt, #sappt{
+    width: 35%;
+}
+
+/*notes*/
+#print{
+    width: 10vw;
+}
+
+ul{
+    list-style: none;
+}
+
+/*billing*/
+#idiscount {
+    width: 50%;
+}
+
+input{
+    width: 30%;
+}

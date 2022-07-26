@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Registration</title>
+
+    <!--Bootstrap-->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!--Icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+<body>
+
+    <div class="container">
+        <div class="grid">
+            <!--header-->
+            <div class="row header">
+                <!--page title-->
+                <div class="row">
+                    <div class="row">
+                        <p>
+                            <a href="./home.html">Home</a> 
+                            > New Patient Registration
+                        </p>
+                    </div>
+                    <div class="col-lg-10">
+                        <h1>Patient Form</h1>
+                    </div>
+                </div>
+                <!--Welcome message-->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h3>Welcome, fdsafdsa</h3>
+                    </div>
+                </div>
+            </div>
+            <!--end of header-->
+
+            <!--body-->
+            <div class="row">
+                <form id="form">
+                    <!--name-->
+                    <div class="row">
+                        <!--First Name-->
+                        <div class="col-lg-4">
+                            <div class="error"></div>
+                            <input type="text" class="inputWidth px-2" name="fname" id="fname" autocomplete="off" required>
+                            <br>
+                            <label for="fname" class="inputWidth text-primary fw-bold labelRequired">First Name</label>
+                            <div class="error m-0 p-0" id="errorFname"></div>
+                        </div>
+                        <!--Middle Name-->
+                        <div class="col-lg-4">
+                            <input type="text"  class="inputWidth px-2" name="mname" id="mname" autocomplete="off">
+                            <br>
+                            <label for="mname" class="text-primary fw-bold">Middle Name</label>
+                        </div>
+                        <!--Last Name-->
+                        <div class="col-lg-4">
+                            <input type="text"  class="inputWidth px-2" name="mname" id="lname" autocomplete="off" required>
+                            <br>
+                            <label for="mname" class="text-primary fw-bold labelRequired">Last Name</label>
+                            <div class="error m-0 p-0" id="errorLname"></div>
+                        </div>
+                    </div>
+                    <!--end of name-->
+
+
+                    <!--address-->
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <input type="text" class="inputAddWidth px-2" name="address" id="address" autocomplete="off" required>
+                            <br>
+                            <label for="address" class="text-primary fw-bold labelRequired">Address</label>
+                            <div class="error m-0 p-0" id="errorAddress"></div>
+                        </div>
+                    </div>
+                    <!--end of address-->
+
+
+                    <!--additional details-->
+                    <div class="row">
+                        <!--Birthdate-->
+                        <div class="col-lg-4">
+                            <input type="date" class="inputWidth px-2" name="bdate" id="bdate" autocomplete="off" required>
+                            <br>
+                            <label for="bdate" class="text-primary fw-bold labelRequired">Birthdate</label>
+                            <div class="error m-0 p-0" id="errorBdate"></div>
+                        </div>
+
+                        <!--Contact Number-->
+                        <div class="col-lg-4">
+                            <input type="text" class="inputWidth px-2" name="cnum" id="cnum" placeholder="(e.g. 0912-3093-345)" autocomplete="off" required>
+                            <br>
+                            <label for="cnum" class="text-primary fw-bold labelRequired">Contact Number</label>
+                            <div class="error m-0 p-0" id="errorCnum"></div>
+                        </div>
+
+                        <!--Gender-->
+                        <div class="col-lg-4" id="divGender">
+                            <label for="gender" class="text-primary fw-bold labelRequired  mt-4">Gender</label>
+                            <input class="ms-3 rbGender" type="radio" id="male" name="gender" value="Male"> Male
+                            <input class="ms-3 rbGender" type="radio" id="female" name="gender" value="Female">  Female
+                            <div class="error m-0 p-0" id="errorGender"></div>
+                        </div>
+                    </div>
+                    <!--end of additional details-->
+
+
+                    <!--Medical History-->
+                    <div class="row mt-3">
+                        <div class="col-lg-4">
+                            <label for="hist" class="text-primary fw-bold">Medical History:</label>
+                        </div>
+                        <div class="col-lg-4">
+
+                            <input type="checkbox" name="hist" id="asthma" value="Asthma"> Asthma <br>
+                            <input type="checkbox" name="hist" id="cancer" value="Cancer"> Cancer <br>
+                            <input type="checkbox" name="hist" id="cardiac" value="Cardiac Disease"> Cardiac Disease <br>
+                            <input type="checkbox" name="hist" id="diabetes" value="Diabetes"> Diabetes <br>
+
+                        </div>
+                        <div class="col-lg-4">
+                            <input type="checkbox" name="hist" id="hypertension" value="Hypertension"> Hypertension <br>
+                            <input type="checkbox" name="hist" id="psychiatric" value="Cancer"> Psychiatric Disorder <br>
+                            <input type="checkbox" name="hist" id="epilepsy" value="Epilepsy"> Epilepsy <br>
+                            <input type="checkbox" name="hist" id="Others" value="Others"> Others <input type="text"> <br>
+                        </div>
+                    </div>
+                    <!--end of Medical History-->
+
+
+                    <!--Current-->
+                    <div class="row mt-5">
+                        <!--Current Symptons-->
+                        <div class="col-lg-4">
+                            <label for="symp" class="text-primary fw-bold">Current Symptoms:</label>
+                        </div>
+                        <div class="col-lg-4">
+                            <select name="symp" id="symp" multiple>
+                                <option value="Chest Pain">Chest Pain</option>
+                                <option value="Respiratory">Respiratory</option>
+                                <option value="Hermatological">Hermatological</option>
+                                <option value="Lymphatic">Lymphatic</option>
+                                <option value="Neurological">Neurological</option>
+                            </select>
+                        </div>
+
+                        <!--Current Medication-->
+                        <div class="col-lg-4">
+                            <label for="med" class="text-primary fw-bold">Are you currently taking medication?</label> <br>
+                            <input class="" type="radio" id="yes" name="med" value="Yes"> Yes <br>
+                            <input class="" type="radio" id="no" name="med" value="No">  No <br>
+                            <input type="text" name="med" id="medType" >
+                        </div>
+                    </div>
+                    <!--end of Current-->
+
+                    
+                    <!--submit and reset-->
+                    <div class="row d-flex justify-content-end align-items-center mt-5">
+                        <input type="button" value="SUBMIT" id="btnSubmit" name="submit" class="bg-primary button text-white p-2" onclick="validEntry(this.form)">
+                        <input type="reset" value="RESET" id="btnReset" name="reset" class="bg-secondary button text-white p-2">
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--end of Container-->
+
+    <!--Script-->
+    <script src="../js/newpatient.js"></script>
+   
+
+
+
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>
